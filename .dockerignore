@@ -1,0 +1,12 @@
+# Secrets and local state must never be copied into an image, where a
+# participant's code could read them.
+.env
+.env.*
+data
+*.log
+
+# Rebuilt inside the image.
+node_modules
+build
+.svelte-kit
+.git
